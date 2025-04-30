@@ -1,8 +1,10 @@
-# Chatterji - AI-Powered Chat Application for Smart Contract Development
 
-Chatterji is a modern, browser-based AI coding assistant specifically designed to simplify Soroban smart contract development. Unlike traditional IDEs that require complex setup and local installations, Chatterji runs entirely in your browser, providing an intuitive chat interface for writing, testing, and deploying Soroban contracts.
+# Calliope IDE - AI-Powered Chat Application for Smart Contract Development
 
-## Why Chatterji?
+Calliope IDE is a modern, browser-based AI coding assistant specifically designed to simplify Soroban smart contract development. Unlike traditional IDEs that require complex setup and local installations, Calliope IDE runs entirely in your browser, providing an intuitive chat interface for writing, testing, and deploying Soroban contracts.
+
+
+## Why Calliope IDE?
 
 Developing Soroban smart contracts can be challenging due to:
 - Complex development environment setup
@@ -10,24 +12,13 @@ Developing Soroban smart contracts can be challenging due to:
 - Limited debugging capabilities
 - Time-consuming contract testing and deployment
 
-Chatterji addresses these challenges by providing:
+Calliope IDE addresses these challenges by providing:
 - 🚀 **Zero Setup**: Run directly in your browser - no local installations needed
 - 🤖 **AI-Powered Assistance**: Get real-time help with contract development
 - 📝 **Smart Code Generation**: Generate boilerplate code and common patterns
 - 🔍 **Instant Error Detection**: Get immediate feedback on your code
 - 🧪 **Built-in Testing**: Test your contracts directly in the chat interface
 - 🔄 **Version Control**: Track changes and collaborate seamlessly
-
-## Table of Contents
-- [Features](#features)
-- [Technical Architecture](#technical-architecture)
-- [User Flow](#user-flow)
-- [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [Development](#development)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -105,38 +96,38 @@ Chatterji addresses these challenges by providing:
 ### Installation
 
 1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/chatterji.git
-cd chatterji
-```
+bash
+git clone https://github.com/yourusername/Calliope IDE.git
+cd Calliope IDE
+
 
 2. Install dependencies:
-```bash
+bash
 npm install
 # or
 yarn install
 # or
 pnpm install
-```
+
 
 3. Set up environment variables:
-```bash
+bash
 cp .env.example .env.local
-```
+
 
 4. Start the development server:
-```bash
+bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-```
+
 
 ## Project Structure
 
-```
-chatterji/
+
+Calliope IDE/
 ├── components/     # Reusable UI components
 ├── config/        # Configuration files
 ├── lib/          # Utility functions and helpers
@@ -146,7 +137,7 @@ chatterji/
 ├── server/       # Server-side code
 ├── styles/       # Global styles and Tailwind config
 └── types/        # TypeScript type definitions
-```
+
 
 ## Development
 
@@ -167,13 +158,11 @@ chatterji/
 - Lazy loading
 - Caching strategies
 
-## Deployment
-
 ### Production Build
-```bash
+bash
 npm run build
 npm start
-```
+
 
 ### Environment Variables
 Required environment variables for production:
@@ -196,4 +185,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Built with ❤️ using [Next.js](https://nextjs.org) and [HeroUI](https://heroui.com)
+Built with ❤ using [Next.js](https://nextjs.org) and [HeroUI](https://heroui.com)

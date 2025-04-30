@@ -102,13 +102,17 @@ cd Calliope IDE
 
 
 2. Install dependencies:
-bash
+```
 npm install
+```
 # or
+```
 yarn install
+```
 # or
+```
 pnpm install
-
+```
 
 3. Set up environment variables:
 bash
@@ -116,7 +120,7 @@ cp .env.example .env.local
 
 
 4. Start the development server:
-bash
+
 ```
 npm run dev
 ```

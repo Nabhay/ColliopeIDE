@@ -86,112 +86,82 @@ Calliope IDE addresses these challenges by providing:
    - Profile management
    - Privacy controls
 
+
 ## Getting Started
 
 ### Prerequisites
-- Node.js 18.x or later
-- npm, yarn, or pnpm
-- Git
+
+- **Node.js**: v18.x or later
+- **Python**: 3.8 or later
+- **npm** or **yarn**
+- **Git**
 
 ### Installation
 
-1. Clone the repository:
-bash
-git clone https://github.com/yourusername/Calliope IDE.git
-cd Calliope IDE
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/aludyalu/chatterji.git
+    cd chatterji
+    ```
 
+2.  **Install Frontend Dependencies**:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-2. Install dependencies:
-```
-npm install
-```
-# or
-```
-yarn install
-```
-# or
-```
-pnpm install
-```
+3.  **Install Backend Dependencies**:
+    ```bash
+    pip install flask google-generativeai
+    ```
 
-3. Set up environment variables:
-bash
-cp .env.example .env.local
+4.  **Set up Environment Variables**:
+    Create a `.env.local` file in the root directory (optional but recommended for Next.js) or export variables directly:
+    ```bash
+    export GEMINI_API_KEY="your_google_gemini_api_key"
+    ```
 
+### Running Locally
 
-4. Start the development server:
+1.  **Start the Backend**:
+    ```bash
+    python3 server/start.py
+    ```
 
-```
-npm run dev
-```
-# or
-```
-yarn dev
-```
-# or
-```
-pnpm dev
-```
+2.  **Start the Frontend** (in a new terminal):
+    ```bash
+    npm run dev
+    ```
 
-## Project Structure
-
-
-Calliope IDE/
-├── components/     # Reusable UI components
-├── config/        # Configuration files
-├── lib/          # Utility functions and helpers
-├── pages/        # Next.js pages and API routes
-├── public/       # Static assets
-├── scripts/      # Build and utility scripts
-├── server/       # Server-side code
-├── styles/       # Global styles and Tailwind config
-└── types/        # TypeScript type definitions
-
-
-## Development
-
-### Code Style
-- Follow the TypeScript strict mode
-- Use ESLint and Prettier for code formatting
-- Write meaningful commit messages
-- Follow the component structure guidelines
-
-### Testing
-- Unit tests with Jest
-- Integration tests with Cypress
-- E2E tests with Playwright
-
-### Performance Optimization
-- Image optimization
-- Code splitting
-- Lazy loading
-- Caching strategies
-
-### Production Build
-bash
-npm run build
-npm start
-
-
-### Environment Variables
-Required environment variables for production:
-- `NEXT_PUBLIC_API_URL`
-- `DATABASE_URL`
-- `OPENAI_API_KEY`
-- `JWT_SECRET`
+3.  **Access the IDE**:
+    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+We welcome contributions from the open-source community!
+
+Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+Check out [TODO.md](TODO.md) for a list of features and fixes that need attention.
+
+## Deployment
+
+### Frontend (Vercel)
+The easiest way to deploy the Next.js frontend is to use the [Vercel Platform](https://vercel.com/new).
+1. Push your code to a Git repository.
+2. Import the project into Vercel.
+3. Add necessary environment variables.
+
+### Backend
+The Python/Flask backend needs a persistent server environment (unlike Vercel's serverless functions which have timeouts).
+- **Recommended**: Railway, Render, or a VPS (DigitalOcean/AWS).
+- Ensure the backend URL is correctly configured in the frontend (you may need to update `pages/app/index.jsx` or use an environment variable for the API URL).
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the `LICENSE` file for details.
 
 ---
 
-Built with ❤ using [Next.js](https://nextjs.org) and [HeroUI](https://heroui.com)
+Built with ❤️ using [Next.js](https://nextjs.org) and [HeroUI](https://heroui.com).

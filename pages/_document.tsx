@@ -7,7 +7,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <title>Calliope</title>
       <body
         className={clsx(
           "dark min-h-screen bg-background font-sans antialiased",

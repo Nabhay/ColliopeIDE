@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 import { Link } from "@heroui/link";
 
 import { Head } from "./head";
@@ -5,7 +7,7 @@ import { Head } from "./head";
 export default function DefaultLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <div className="relative flex flex-col h-screen">
